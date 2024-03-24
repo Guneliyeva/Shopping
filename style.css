@@ -1,0 +1,391 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Heebo", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.first_nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 600px;
+  padding: 8px;
+}
+
+.first_nav .text1 {
+  color: white;
+}
+
+.first_nav .menu1 ul {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+.first_nav .menu1 ul a {
+  color: white;
+}
+
+.first_nav .menu1 ul li a:hover {
+  color: rgb(151, 152, 153);
+}
+
+.dropdown {
+  /* position: relative;
+  display: inline-block; */
+}
+
+.dropdown-content {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  
+}
+
+.dropdown-content ul li {
+  display: block;
+}
+
+/* .dropdown-content ul{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  overflow: hidden;
+} */
+
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* .first_nav .menu ul #demos {
+  color: grey;
+} */
+/* ---------------------------------------------- */
+.second_nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.second_nav .logo_u {
+  color: white;
+  background-color: rgb(48, 49, 51);
+  padding: 8px 6px;
+  border-radius: 45%;
+  cursor: pointer;
+}
+.second_nav .logo_u span {
+  font-size: 40;
+}
+
+.second_nav .menu2 ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+/* ----------------------------------------------- */
+
+/* 
+.second_nav .menu2 #demos{
+  position: relative;
+  width: 100%;
+  
+}
+
+.second_nav .menu2 #demos li, h4{
+  display: none;
+}
+
+.second_nav .menu2 #demos ul li{
+  color: grey;
+  background-color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  z-index: 999;
+  width: 200px;
+  height: auto;
+  text-align: left;
+  overflow: hidden;
+}
+
+.second_nav .menu2 #demos:hover ul li{
+  display: block;
+} */
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+.second_nav .menu2 ul li:hover {
+  color: grey;
+}
+
+.second_nav .menu_icons i {
+  font-size: 18px;
+  font-weight: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.second_nav .menu_icons i:hover {
+  color: rgb(151, 152, 153);
+}
+/* ---------------------------------------------------- */
+.cover_page {
+  background-image: url(media/cover_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  /* padding: 200px; */
+}
+
+.cover_page .left_text {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+
+.cover_page h2 {
+  color: white;
+  font-size: 15px;
+  /* padding: 30px; */
+}
+
+.cover_page h1 {
+  color: white;
+  font-size: 36px;
+  padding: 20px 0px;
+}
+
+.cover_page .cover_link {
+  padding: 30px 0px;
+}
+
+.cover_page .cover_link a {
+  color: white;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 15px 30px;
+  font-size: 16px; /* Yazı boyutu */
+  cursor: pointer; /* İmleç üzerine geldiğinde el simgesi */
+  transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+.cover_page .cover_link a:hover {
+  color: rgb(151, 152, 153);
+  background-color: white;
+}
+
+/* -------------------------------------------- */
+
+.brand img {
+  width: 70px;
+}
+
+.cell {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 30px 50px;
+  color: rgb(62, 63, 65);
+  gap: 50px;
+}
+
+.cell_head_text {
+  display: flex;
+  flex-direction: flex-end;
+  gap: 30px;
+  padding: 30px;
+  margin-left: 850px;
+}
+
+.cell .filter {
+  width: 80%;
+}
+
+.cell .filter .categorie_head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+/* ---------------------------------------------------- */
+
+.cell .products {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.cell .products .product img {
+  width: 160px;
+  height: auto;
+  position: relative;
+}
+
+.cell .products .product .img_icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.product {
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.products .product .txt {
+  text-align: center;
+}
+
+.cell .products .product .marka {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  left: 25px;
+}
+
+.cross {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+.cross ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+.cross ul li{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cross #one{
+  background-color: rgb(238, 238, 238);
+  border-radius: 50%;
+}
+
+
+.cross ul li:hover {
+  
+  color: brown;
+}
+
+.cross i:hover{
+  color: brown;
+  cursor: pointer;
+}
+
+/* --------------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(27, 29, 31);
+  padding: 70px 50px;
+  color: white;
+  font-size: 16px;
+}
+
+.footer .about {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+
+.footer .about li:hover {
+  color: brown;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.form input[type="email"] {
+  flex: 1;
+  padding: 5px;
+  background-color: rgb(27, 29, 31);
+  border: none;
+}
+
+.form input[type="submit"] {
+  flex: 0 0 auto;
+  padding: 7px 15px;
+  background-color: rgb(35, 36, 38);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Opsiyonel: Butona hover efekti */
+.form input[type="submit"]:hover {
+  background-color: rgb(27, 29, 27);
+}
+
+/* ------------------------------------------------- */
+hr {
+  border-top: 0.5px solid rgb(151, 152, 153);
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(27, 29, 31);
+  padding: 20px 50px;
+}
+
+.end .copyright p {
+  color: white;
+}
+
+.end .social_icon i {
+  padding: 0px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.end .social_icon i:hover {
+  color: brown;
+}
