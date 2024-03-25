@@ -7,7 +7,9 @@
   list-style: none;
   font-family: "Heebo", sans-serif;
 }
-
+a{
+  color: inherit;
+}
 .container {
   width: 100%;
   height: auto;
@@ -34,11 +36,11 @@
   gap: 30px;
   cursor: pointer;
 }
-.first_nav .menu1 ul a {
+.first_nav .menu1 > ul {
   color: white;
 }
 
-.first_nav .menu1 ul li a:hover {
+.first_nav .menu1 ul > li:hover {
   color: rgb(151, 152, 153);
 }
 
@@ -85,73 +87,76 @@
   padding: 30px;
 }
 
-.second_nav .logo_u {
+.logo_u {
   color: white;
   background-color: rgb(48, 49, 51);
   padding: 8px 6px;
   border-radius: 45%;
   cursor: pointer;
 }
-.second_nav .logo_u span {
+.logo_u span {
   font-size: 40;
 }
 
-.second_nav .menu2 ul {
+.menu2 ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
   cursor: pointer;
-}
-/* ----------------------------------------------- */
-
-/* 
-.second_nav .menu2 #demos{
-  position: relative;
-  width: 100%;
   
 }
-
-.second_nav .menu2 #demos li, h4{
-  display: none;
+.menu2 ul li{
+  color: black;
 }
-
-.second_nav .menu2 #demos ul li{
-  color: grey;
-  background-color: white;
-  display: block;
+.demos{
+  position: relative;
+  width: 100%;
+  display: flex;
+ 
+}
+.demos_main{
   position: absolute;
-  left: 0;
-  top: 40px;
-  z-index: 999;
-  width: 200px;
-  height: auto;
-  text-align: left;
-  overflow: hidden;
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 10px 40px 10px  10px;
+  top: 58px;
+  left: -100px;
+
+transition: 1s;
+display: flex;
+gap: 40px;
+display: none;
+}
+.demos ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px !important;
+width: max-content;
+align-items: start;
+transition: 1s;
 }
 
-.second_nav .menu2 #demos:hover ul li{
-  display: block;
-} */
+.demos:hover .demos_main {
+display: flex;
+transition: 1s;
+}
 
 
-
-
-
-
-/* ---------------------------------------------------------- */
-.second_nav .menu2 ul li:hover {
+.menu2 ul > li:hover {
   color: grey;
+
 }
 
-.second_nav .menu_icons i {
+
+.menu_icons i {
   font-size: 18px;
   font-weight: 10px;
   padding: 10px;
   cursor: pointer;
 }
 
-.second_nav .menu_icons i:hover {
+.menu_icons i:hover {
   color: rgb(151, 152, 153);
 }
 /* ---------------------------------------------------- */
@@ -234,6 +239,28 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
+}
+
+.cell .filter .categorie_head #brand input[type="checkbox"]{
+  display: none;
+}
+
+#brand label {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0; /* Devre dışı rengi */
+}
+
+#brand input[type="checkbox"]:checked + label {
+  background-color: #007bff; /* Seçildiğindeki rengi */
+  color: white;
+}
+
+#brand input[type="checkbox"]:disabled + label {
+  pointer-events: none; /* Görseli devre dışı bırak */
+  opacity: 0.5; /* Opaklık ayarı */
 }
 
 /* ---------------------------------------------------- */
